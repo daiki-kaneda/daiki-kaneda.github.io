@@ -7,6 +7,7 @@ import PiyoMath from '../ui/pages/PiyoMath';
 import CatClassifier from '../ui/pages/CatClassifier';
 import MidnightBright from '../ui/pages/MidnightBright';
 import FaceMask from '../ui/pages/FaceMask';
+import BitMath from '../ui/pages/BitMath';
 
 
 const router = createBrowserRouter([
@@ -35,6 +36,10 @@ const router = createBrowserRouter([
             {
               path: "face_mask/",
               element: <FaceMask />,
+            },
+            {
+              path: "bit_math/",
+              element: <BitMath />,
             },
             // {
             //   path: "contact/",
