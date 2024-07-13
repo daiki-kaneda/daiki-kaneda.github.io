@@ -5,10 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Page Not Found</title>
     <script type="text/javascript">
-        // URLをホームページにリダイレクト
-        var redirectUrl = '/';
-        // 現在のパスをクエリパラメータとして保持する場合は以下を使用
-        // var redirectUrl = '/?p=' + window.location.pathname;
+        // 現在のパスをクエリパラメータとして保持してリダイレクト
+        var redirectUrl = '/?p=' + window.location.pathname;
         window.location.replace(redirectUrl);
     </script>
 </head>
