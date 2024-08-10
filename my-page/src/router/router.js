@@ -8,6 +8,7 @@ import CatClassifier from '../ui/pages/CatClassifier';
 import MidnightBright from '../ui/pages/MidnightBright';
 import FaceMask from '../ui/pages/FaceMask';
 import BitMath from '../ui/pages/BitMath';
+import TTS from '../ui/pages/TTS';
 
 
 const router = createBrowserRouter([
@@ -16,7 +17,7 @@ const router = createBrowserRouter([
       element: <Root />,
       errorElement:<ErrorPage />,
       children:[
-           { index: true, element: <FaceMask />},
+           { index: true, element: <TTS />},
             {
               path: "contact/",
               element: <Contact />,
@@ -40,6 +41,10 @@ const router = createBrowserRouter([
             {
               path: "bit_math/",
               element: <BitMath />,
+            },
+            {
+              path: "tts/",
+              element: <TTS />,
             },
             // {
             //   path: "contact/",

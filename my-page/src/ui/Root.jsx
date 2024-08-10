@@ -128,6 +128,7 @@ export default function Root() {
         <Divider />
         <List>
           {[
+            {name:'TextToSpeech App',path:'tts'},
             {name:'Bit Math',path:'bit_math'},
             {name:'Face+Mask',path:'face_mask'},
             {name:'MidnightBright',path:'midnight_bright'}, 
