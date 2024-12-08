@@ -103,7 +103,7 @@ export default function Root() {
             <MenuIcon />
           </IconButton>
           <Typography variant="h6" noWrap component="div">
-            My App Pages
+          App Policies
           </Typography>
         </Toolbar>
       </AppBar>
