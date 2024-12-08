@@ -1,3 +1,190 @@
+import React from "react";
+import {
+  Accordion,
+  AccordionSummary,
+  AccordionDetails,
+  Typography,
+  Container,
+} from "@mui/material";
+import ExpandMoreIcon from "@mui/icons-material/ExpandMore";
+
+const GrocerEase = () => {
+  return (
+    <Container>
+      <Typography variant="h4" gutterBottom>
+        GrocerEase Privacy Policy and Terms
+      </Typography>
+
+      {/* Privacy Policy Section */}
+      <Accordion>
+        <AccordionSummary expandIcon={<ExpandMoreIcon />}>
+          <Typography variant="h6">Privacy Policy</Typography>
+        </AccordionSummary>
+        <AccordionDetails>
+          <Typography variant="body1" gutterBottom>
+            This privacy policy applies to the GrocerEase app for mobile devices created by Daiki Kaneda. This service is provided "AS IS".
+          </Typography>
+          <Typography variant="h6" gutterBottom>
+            Information Collection and Use
+          </Typography>
+          <Typography variant="body2" paragraph>
+            The application collects information such as:
+          </Typography>
+          <ul>
+            <li>Your device's IP address</li>
+            <li>Pages visited, time spent, and device OS</li>
+          </ul>
+          <Typography variant="body2" paragraph>
+            The application collects approximate location data for:
+          </Typography>
+          <ul>
+            <li>Providing location-based services</li>
+            <li>Analytics and improvements</li>
+            <li>Third-party service optimization</li>
+          </ul>
+          <Typography variant="h6" gutterBottom>
+            Third Party Access
+          </Typography>
+          <Typography variant="body2" paragraph>
+            Only anonymized data is shared with trusted third-party services:
+          </Typography>
+          <ul>
+            <li>
+              <a href="https://support.google.com/admob/answer/6128543?hl=en">
+                AdMob
+              </a>
+            </li>
+            <li>
+              <a href="https://firebase.google.com/support/privacy/">
+                Firebase Crashlytics
+              </a>
+            </li>
+          </ul>
+        </AccordionDetails>
+      </Accordion>
+
+      {/* Terms and Conditions Section */}
+      <Accordion>
+        <AccordionSummary expandIcon={<ExpandMoreIcon />}>
+          <Typography variant="h6">Terms & Conditions</Typography>
+        </AccordionSummary>
+        <AccordionDetails>
+          <Typography variant="body1" gutterBottom>
+            These terms apply to the GrocerEase app created by Daiki Kaneda.
+          </Typography>
+          <Typography variant="h6" gutterBottom>
+            Subscription Terms
+          </Typography>
+          <ul>
+            <li>Subscriptions are billed monthly and renew automatically.</li>
+            <li>You can manage your subscription via the App Store or Google Play.</li>
+            <li>
+              Free trials (if available) are only for first-time subscribers and
+              will end upon subscription purchase.
+            </li>
+          </ul>
+          <Typography variant="h6" gutterBottom>
+            Responsibility
+          </Typography>
+          <Typography variant="body2" paragraph>
+            Ensure your device is charged and has internet access to use the application fully. The Service Provider cannot be held responsible for external issues such as network unavailability.
+          </Typography>
+        </AccordionDetails>
+      </Accordion>
+
+      {/* Contact Section */}
+      <Accordion>
+        <AccordionSummary expandIcon={<ExpandMoreIcon />}>
+          <Typography variant="h6">Contact Us</Typography>
+        </AccordionSummary>
+        <AccordionDetails>
+          <Typography variant="body1">
+            If you have questions, contact us at{" "}
+            <a href="mailto:piyomathfeedback@gmail.com">
+              piyomathfeedback@gmail.com
+            </a>
+            .
+          </Typography>
+        </AccordionDetails>
+      </Accordion>
+    </Container>
+  );
+};
+
+export default GrocerEase;
+
+// import React from "react";
+// import {
+//   Accordion,
+//   AccordionSummary,
+//   AccordionDetails,
+//   Typography,
+//   Container,
+//   Box,
+// } from "@mui/material";
+// import ExpandMoreIcon from "@mui/icons-material/ExpandMore";
+
+// const GrocerEase: React.FC = () => {
+//   const sections = [
+//     {
+//       title: "Privacy Policy",
+//       content: `
+//         This privacy policy applies to the GrocerEase app (hereby referred to as "Application") for mobile devices that was created by Daiki Kaneda as a Commercial service. This service is intended for use "AS IS".
+        
+//         The Application collects information such as your IP address, visited pages, and operating system details. It does not collect precise location data but uses approximate geolocation for analytics, improvements, and third-party services. The Application may share anonymized data with trusted external services such as AdMob and Firebase Crashlytics.
+        
+//         You can stop all information collection by uninstalling the Application. Children under 13 are not knowingly targeted, and parents can request the deletion of collected data. Changes to this policy will be posted on this page.
+//       `,
+//     },
+//     {
+//       title: "Terms and Conditions",
+//       content: `
+//         By using the GrocerEase app, you agree to these terms. Unauthorized modification or copying of the app is prohibited. The Service Provider reserves the right to modify the Application or charge for its services. Some functions require an active internet connection. Ensure your device is charged and up to date.
+        
+//         The app may be updated or discontinued without prior notice. Continued use of the app implies agreement to updated terms.
+//       `,
+//     },
+//     {
+//       title: "Subscription Terms and Conditions",
+//       content: `
+//         Subscriptions provide monthly ad-free access. Payments are charged via App Store or Google Play and renew automatically unless canceled 24 hours before the end of the billing period. Free trials, if offered, are for first-time users only and will be forfeited upon subscription purchase.
+//       `,
+//     },
+//     {
+//       title: "Contact Us",
+//       content: `
+//         For questions about this policy or the terms, contact us at piyomathfeedback@gmail.com.
+//       `,
+//     },
+//   ];
+
+//   return (
+//     <Container maxWidth="md">
+//       <Box my={4}>
+//         <Typography variant="h4" gutterBottom>
+//           GrocerEase - Privacy Policy & Terms
+//         </Typography>
+//         {sections.map((section, index) => (
+//           <Accordion key={index}>
+//             <AccordionSummary
+//               expandIcon={<ExpandMoreIcon />}
+//               aria-controls={`panel${index}-content`}
+//               id={`panel${index}-header`}
+//             >
+//               <Typography variant="h6">{section.title}</Typography>
+//             </AccordionSummary>
+//             <AccordionDetails>
+//               <Typography>{section.content}</Typography>
+//             </AccordionDetails>
+//           </Accordion>
+//         ))}
+//       </Box>
+//     </Container>
+//   );
+// };
+
+// export default GrocerEase;
+
 // **Privacy Policy**
 
 // This privacy policy applies to the GrocerEase app (hereby referred to as "Application") for mobile devices that was created by Daiki Kaneda (hereby referred to as "Service Provider") as a Commercial service. This service is intended for use "AS IS".

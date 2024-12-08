@@ -9,8 +9,20 @@ import MidnightBright from '../ui/pages/MidnightBright';
 import FaceMask from '../ui/pages/FaceMask';
 import BitMath from '../ui/pages/BitMath';
 import TTS from '../ui/pages/TTS';
+import GrocerEase from '../ui/pages/GrocerEase';
 
 
+
+const appPages = [
+  { path: "contact/", element: <Contact /> },
+  { path: "piyo_math/", element: <PiyoMath /> },
+  { path: "cat_classifier/", element: <CatClassifier /> },
+  { path: "midnight_bright/", element: <MidnightBright /> },
+  { path: "face_mask/", element: <FaceMask /> },
+  { path: "bit_math/", element: <BitMath /> },
+  { path: "tts/", element: <TTS /> },
+  { path: "grocer_ease/", element: <GrocerEase /> },
+];
 const router = createBrowserRouter([
     {
       path: "/",
@@ -18,52 +30,7 @@ const router = createBrowserRouter([
       errorElement:<ErrorPage />,
       children:[
            { index: true, element: <TTS />},
-            {
-              path: "contact/",
-              element: <Contact />,
-            },
-            {
-              path: "piyo_math/",
-              element: <PiyoMath />,
-            },
-            {
-              path: "cat_classifier/",
-              element: <CatClassifier />,
-            },
-            {
-              path: "midnight_bright/",
-              element: <MidnightBright />,
-            },
-            {
-              path: "face_mask/",
-              element: <FaceMask />,
-            },
-            {
-              path: "bit_math/",
-              element: <BitMath />,
-            },
-            {
-              path: "tts/",
-              element: <TTS />,
-            },
-            // {
-            //   path: "contact/",
-            //   element: <Contact />,
-            // },
-            // {
-            //   path: "contact/",
-            //   element: <Contact />,
-            // },
-            // {
-            //   path: "contact/",
-            //   element: <Contact />,
-            // },
-            // {
-            //   path: "contact/",
-            //   element: <Contact />,
-            // },
-          
-        
+            ...appPages
       ]
     },
   ]);
