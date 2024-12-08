@@ -83,13 +83,13 @@ const GrocerEase = () => {
       </Accordion>
 
       {/* Contact Section */}
-      <Accordion>
+      {/* <Accordion>
         <AccordionSummary 
        // expandIcon={< />}
         onClick={()=>navigate('/contact')}>
           <Typography variant="h6">Contact Us</Typography>
         </AccordionSummary>
-      </Accordion>
+      </Accordion> */}
     </Container>
   );
 };
