@@ -7,7 +7,7 @@ export default function Contact(){
     <Box display="flex">
       <EmailIcon color="primary" sx={{ mr: 1 }} />
       <Link href="mailto:piyomathfeedback@gmail.com" variant="body1" color="inherit">
-        send me email❤️
+        email
       </Link>
     </Box>
   );

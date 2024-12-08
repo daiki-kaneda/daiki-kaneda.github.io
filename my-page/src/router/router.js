@@ -19,7 +19,7 @@ const appPages = [
   { path: "cat_classifier/", element: <CatClassifier /> },
   { path: "midnight_bright/", element: <MidnightBright /> },
   { path: "face_mask/", element: <FaceMask /> },
-  { path: "bit_math/", element: <BitMath /> },
+  //{ path: "bit_math/", element: <BitMath /> },
   { path: "tts/", element: <TTS /> },
   { path: "grocer_ease/", element: <GrocerEase /> },
 ];

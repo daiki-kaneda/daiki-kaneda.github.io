@@ -7,12 +7,14 @@ import {
   Container,
 } from "@mui/material";
 import ExpandMoreIcon from "@mui/icons-material/ExpandMore";
+import { useNavigate } from "react-router-dom";
 
 const GrocerEase = () => {
+  const navigate = useNavigate();
   return (
-    <Container>
-      <Typography variant="h4" gutterBottom>
-        GrocerEase Privacy Policy and Terms
+    <Container maxWidth="md" style={{ marginTop: "20px" }}>
+      <Typography variant="h4" align="center" gutterBottom>
+        GrocerEase App Policy
       </Typography>
 
       {/* Privacy Policy Section */}
@@ -21,20 +23,14 @@ const GrocerEase = () => {
           <Typography variant="h6">Privacy Policy</Typography>
         </AccordionSummary>
         <AccordionDetails>
-          <Typography variant="body1" gutterBottom>
-            This privacy policy applies to the GrocerEase app for mobile devices created by Daiki Kaneda. This service is provided "AS IS".
-          </Typography>
-          <Typography variant="h6" gutterBottom>
-            Information Collection and Use
-          </Typography>
-          <Typography variant="body2" paragraph>
-            The application collects information such as:
+          <Typography variant="body1" paragraph>
+            <strong>Information Collection and Use: </strong>The application collects information such as:
           </Typography>
           <ul>
             <li>Your device's IP address</li>
             <li>Pages visited, time spent, and device OS</li>
           </ul>
-          <Typography variant="body2" paragraph>
+          <Typography variant="body1" paragraph>
             The application collects approximate location data for:
           </Typography>
           <ul>
@@ -42,11 +38,8 @@ const GrocerEase = () => {
             <li>Analytics and improvements</li>
             <li>Third-party service optimization</li>
           </ul>
-          <Typography variant="h6" gutterBottom>
-            Third Party Access
-          </Typography>
-          <Typography variant="body2" paragraph>
-            Only anonymized data is shared with trusted third-party services:
+          <Typography variant="body1" paragraph>
+            <strong>Third Party Access: </strong>Only anonymized data is shared with trusted third-party services:
           </Typography>
           <ul>
             <li>
@@ -70,10 +63,7 @@ const GrocerEase = () => {
         </AccordionSummary>
         <AccordionDetails>
           <Typography variant="body1" gutterBottom>
-            These terms apply to the GrocerEase app created by Daiki Kaneda.
-          </Typography>
-          <Typography variant="h6" gutterBottom>
-            Subscription Terms
+            <strong>Subscription Terms:</strong>
           </Typography>
           <ul>
             <li>Subscriptions are billed monthly and renew automatically.</li>
@@ -83,10 +73,10 @@ const GrocerEase = () => {
               will end upon subscription purchase.
             </li>
           </ul>
-          <Typography variant="h6" gutterBottom>
-            Responsibility
+          <Typography variant="body1" gutterBottom>
+            <strong>Responsibility:</strong>
           </Typography>
-          <Typography variant="body2" paragraph>
+          <Typography variant="body1" paragraph>
             Ensure your device is charged and has internet access to use the application fully. The Service Provider cannot be held responsible for external issues such as network unavailability.
           </Typography>
         </AccordionDetails>
@@ -94,18 +84,11 @@ const GrocerEase = () => {
 
       {/* Contact Section */}
       <Accordion>
-        <AccordionSummary expandIcon={<ExpandMoreIcon />}>
+        <AccordionSummary 
+       // expandIcon={< />}
+        onClick={()=>navigate('/contact')}>
           <Typography variant="h6">Contact Us</Typography>
         </AccordionSummary>
-        <AccordionDetails>
-          <Typography variant="body1">
-            If you have questions, contact us at{" "}
-            <a href="mailto:piyomathfeedback@gmail.com">
-              piyomathfeedback@gmail.com
-            </a>
-            .
-          </Typography>
-        </AccordionDetails>
       </Accordion>
     </Container>
   );

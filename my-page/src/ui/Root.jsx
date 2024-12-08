@@ -130,7 +130,7 @@ export default function Root() {
           {[
             {name:'GrocerEase',path:'grocer_ease'},
             {name:'TextToSpeech App',path:'tts'},
-            {name:'Bit Math',path:'bit_math'},
+            //{name:'Bit Math',path:'bit_math'},
             {name:'Face+Mask',path:'face_mask'},
             {name:'MidnightBright',path:'midnight_bright'}, 
             {name:'Cat Classifier',path:'cat_classifier'}, 
