@@ -9,7 +9,7 @@ import MidnightBright from '../ui/pages/MidnightBright';
 import FaceMask from '../ui/pages/FaceMask';
 import BitMath from '../ui/pages/BitMath';
 import TTS from '../ui/pages/TTS';
-import GrocerEase from '../ui/pages/GrocerEase';
+import MyFlavor from '../ui/pages/MyFlavor';
 
 
 
@@ -21,7 +21,7 @@ const appPages = [
   { path: "face_mask/", element: <FaceMask /> },
   //{ path: "bit_math/", element: <BitMath /> },
   { path: "tts/", element: <TTS /> },
-  { path: "grocer_ease/", element: <GrocerEase /> },
+  { path: "my_flavor/", element: <MyFlavor /> },
 ];
 const router = createBrowserRouter([
     {

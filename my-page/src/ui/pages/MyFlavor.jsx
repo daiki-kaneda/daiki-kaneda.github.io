@@ -9,12 +9,12 @@ import {
 import ExpandMoreIcon from "@mui/icons-material/ExpandMore";
 import { useNavigate } from "react-router-dom";
 
-const GrocerEase = () => {
+const MyFlavor = () => {
   const navigate = useNavigate();
   return (
     <Container maxWidth="md" style={{ marginTop: "20px" }}>
       <Typography variant="h4" align="center" gutterBottom>
-        GrocerEase App Policy
+        My Flavor App Policy
       </Typography>
 
       {/* Privacy Policy Section */}
@@ -29,6 +29,7 @@ const GrocerEase = () => {
           <ul>
             <li>Your device's IP address</li>
             <li>Pages visited, time spent, and device OS</li>
+            <li>Your device's unique identifier (deviceId)</li>
           </ul>
           <Typography variant="body1" paragraph>
             The application collects approximate location data for:
@@ -51,6 +52,11 @@ const GrocerEase = () => {
               <a href="https://firebase.google.com/support/privacy/">
                 Firebase Crashlytics
               </a>
+            </li>
+            <li>
+              <a href="https://firebase.google.com/terms/data-processing-terms">
+                Firebase Firestore
+              </a> for storing and managing user data
             </li>
           </ul>
         </AccordionDetails>
@@ -82,19 +88,12 @@ const GrocerEase = () => {
         </AccordionDetails>
       </Accordion>
 
-      {/* Contact Section */}
-      {/* <Accordion>
-        <AccordionSummary 
-       // expandIcon={< />}
-        onClick={()=>navigate('/contact')}>
-          <Typography variant="h6">Contact Us</Typography>
-        </AccordionSummary>
-      </Accordion> */}
     </Container>
   );
 };
 
-export default GrocerEase;
+export default MyFlavor;
+
 
 // import React from "react";
 // import {
