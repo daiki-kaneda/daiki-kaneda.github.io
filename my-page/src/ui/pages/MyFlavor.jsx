@@ -14,7 +14,7 @@ const MyFlavor = () => {
   return (
     <Container maxWidth="md" style={{ marginTop: "20px" }}>
       <Typography variant="h4" align="center" gutterBottom>
-        My Flavor App Policy
+      Easy Recipes App Policy
       </Typography>
 
       {/* Privacy Policy Section */}
