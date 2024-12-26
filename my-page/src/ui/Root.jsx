@@ -128,7 +128,7 @@ export default function Root() {
         <Divider />
         <List>
           {[
-            {name:'Easy Recipes',path:'my_flavor'},
+            {name:'AI-Powered Recipe Maker',path:'my_flavor'},
             {name:'TextToSpeech App',path:'tts'},
             //{name:'Bit Math',path:'bit_math'},
             {name:'Face+Mask',path:'face_mask'},
