@@ -131,9 +131,9 @@ export default function Root() {
             {name:'AI-Powered Recipe Maker',path:'my_flavor'},
             {name:'TextToSpeech App',path:'tts'},
             //{name:'Bit Math',path:'bit_math'},
-            {name:'Face+Mask',path:'face_mask'},
+            // {name:'Face+Mask',path:'face_mask'},
             {name:'MidnightBright',path:'midnight_bright'}, 
-            {name:'Cat Classifier',path:'cat_classifier'}, 
+            // {name:'Cat Classifier',path:'cat_classifier'}, 
             {name:'PiyoMath',path:'piyo_math'},
             ].map((data, index) => (
             <ListItem key={data.name} disablePadding>

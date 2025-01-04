@@ -16,9 +16,9 @@ import MyFlavor from '../ui/pages/MyFlavor';
 const appPages = [
   { path: "contact/", element: <Contact /> },
   { path: "piyo_math/", element: <PiyoMath /> },
-  { path: "cat_classifier/", element: <CatClassifier /> },
+  // { path: "cat_classifier/", element: <CatClassifier /> },
   { path: "midnight_bright/", element: <MidnightBright /> },
-  { path: "face_mask/", element: <FaceMask /> },
+  // { path: "face_mask/", element: <FaceMask /> },
   //{ path: "bit_math/", element: <BitMath /> },
   { path: "tts/", element: <TTS /> },
   { path: "my_flavor/", element: <MyFlavor /> },
