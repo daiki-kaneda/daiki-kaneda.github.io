@@ -29,7 +29,7 @@ const router = createBrowserRouter([
       element: <Root />,
       errorElement:<ErrorPage />,
       children:[
-           { index: true, element: <TTS />},
+           { index: true, element: <MyFlavor />},
             ...appPages
       ]
     },
