@@ -80,12 +80,19 @@ export default function Root() {
     setOpen(false);
   };
 
+  // React.useEffect(() => {
+  //     const query = new URLSearchParams(window.location.search);
+  //     const path = query.get('p');
+  //     if (path) {
+  //         navigate(path,{ replace: true });
+  //     }
+  // }, [navigate]);
+
   React.useEffect(() => {
-      const query = new URLSearchParams(window.location.search);
-      const path = query.get('p');
-      if (path) {
-          navigate(path,{ replace: true });
-      }
+    if (!window.location.hash) {
+      const path = window.location.pathname
+      navigate(`${path}`, { replace: true });
+    }
   }, [navigate]);
 
   return (

@@ -1,4 +1,4 @@
-import {createBrowserRouter} from 'react-router-dom';
+import {createBrowserRouter, createHashRouter} from 'react-router-dom';
 import Root from '../ui/Root';
 import Contact from '../ui/pages/Contact';
 import Pages from '../ui/Pages';
@@ -23,7 +23,7 @@ const appPages = [
   { path: "tts/", element: <TTS /> },
   { path: "my_flavor/", element: <MyFlavor /> },
 ];
-const router = createBrowserRouter([
+const router = createHashRouter([
     {
       path: "/",
       element: <Root />,
