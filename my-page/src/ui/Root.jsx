@@ -142,6 +142,7 @@ export default function Root() {
             {name:'MidnightBright',path:'midnight_bright'}, 
             // {name:'Cat Classifier',path:'cat_classifier'}, 
             {name:'PiyoMath',path:'piyo_math'},
+            {name:'MyDict',path:'my_dict'},
             ].map((data, index) => (
             <ListItem key={data.name} disablePadding>
               <ListItemButton onClick={()=>navigate(data.path)}>

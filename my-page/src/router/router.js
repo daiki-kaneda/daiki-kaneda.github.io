@@ -10,6 +10,7 @@ import FaceMask from '../ui/pages/FaceMask';
 import BitMath from '../ui/pages/BitMath';
 import TTS from '../ui/pages/TTS';
 import MyFlavor from '../ui/pages/MyFlavor';
+import MyDict from '../ui/pages/MyDict';
 
 
 
@@ -22,6 +23,7 @@ const appPages = [
   //{ path: "bit_math/", element: <BitMath /> },
   { path: "tts/", element: <TTS /> },
   { path: "my_flavor/", element: <MyFlavor /> },
+  { path: "my_dict/", element: <MyDict /> },
 ];
 const router = createHashRouter([
     {
