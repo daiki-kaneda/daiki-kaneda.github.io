@@ -12,7 +12,7 @@ const MyDict = () => {
   return (
     <Container maxWidth="md" style={{ marginTop: "20px" }}>
       <Typography variant="h4" align="center" gutterBottom>
-        MyDict App Policy
+        MYDICT App Policy
       </Typography>
       
       {/* Privacy Policy */}
@@ -26,7 +26,7 @@ const MyDict = () => {
         </AccordionSummary>
         <AccordionDetails>
           <Typography variant="body1" paragraph>
-            <strong>Information Collection and Use:</strong> MyDict does not collect, store, or share any user data.
+            <strong>Information Collection and Use:</strong> MYDICT does not collect, store, or share any user data.
           </Typography>
           <Typography variant="body1" paragraph>
             <strong>Third-Party Access:</strong> This application does not integrate with third-party services such as analytics or advertisements.
@@ -48,10 +48,10 @@ const MyDict = () => {
         </AccordionSummary>
         <AccordionDetails>
           <Typography variant="body1" paragraph>
-            <strong>Usage Agreement:</strong> MyDict is provided for English language learning through AI-based dictation exercises. Users may use the generated content freely without restrictions.
+            <strong>Usage Agreement:</strong> MYDICT is provided for English language learning through AI-based dictation exercises. Users may use the generated content freely without restrictions.
           </Typography>
           <Typography variant="body1" paragraph>
-            <strong>Paid Features:</strong> MyDict offers in-app purchases for tickets required to generate dictation problems. Please note that purchased items are non-refundable, and no compensation will be provided if the service is discontinued.
+            <strong>Paid Features:</strong> MYDICT offers in-app purchases for tickets required to generate dictation problems. Please note that purchased items are non-refundable, and no compensation will be provided if the service is discontinued.
           </Typography>
           <Typography variant="body1" paragraph>
             <strong>Service Termination:</strong> The developer reserves the right to modify or terminate the service at any time without prior notice.
