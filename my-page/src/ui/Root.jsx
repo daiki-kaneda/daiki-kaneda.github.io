@@ -14,11 +14,8 @@ import ChevronLeftIcon from '@mui/icons-material/ChevronLeft';
 import ChevronRightIcon from '@mui/icons-material/ChevronRight';
 import ListItem from '@mui/material/ListItem';
 import ListItemButton from '@mui/material/ListItemButton';
-import ListItemIcon from '@mui/material/ListItemIcon';
 import ListItemText from '@mui/material/ListItemText';
-import InboxIcon from '@mui/icons-material/MoveToInbox';
-import MailIcon from '@mui/icons-material/Mail';
-import { Link, Outlet, useNavigate } from 'react-router-dom';
+import {Outlet, useNavigate } from 'react-router-dom';
 
 const drawerWidth = 240;
 
@@ -135,15 +132,15 @@ export default function Root() {
         <Divider />
         <List>
           {[
-            {name:'AI-Powered Recipe Maker',path:'my_flavor'},
+            // {name:'AI-Powered Recipe Maker',path:'my_flavor'},
             {name:'TextToSpeech App',path:'tts'},
             //{name:'Bit Math',path:'bit_math'},
             // {name:'Face+Mask',path:'face_mask'},
             {name:'MidnightBright',path:'midnight_bright'}, 
             // {name:'Cat Classifier',path:'cat_classifier'}, 
             {name:'PiyoMath',path:'piyo_math'},
-            {name:'MyDict',path:'my_dict'},
-            ].map((data, index) => (
+            // {name:'MyDict',path:'my_dict'},
+            ].map((data, _) => (
             <ListItem key={data.name} disablePadding>
               <ListItemButton onClick={()=>navigate(data.path)}>
                 <ListItemText primary={data.name} />
